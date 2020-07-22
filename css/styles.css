@@ -331,10 +331,6 @@ main {
     background-color: var(--accent-color);
 }
 
-.team-card img {
-    margin-bottom: 30px;
-}
-
 .team-card-name {
     font-weight: 500;
     font-size: 16px;
