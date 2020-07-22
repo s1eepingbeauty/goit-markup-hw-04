@@ -11,11 +11,6 @@
     --desc-color: #757575;
 }
 
-/*
-Roboto 900 700 500 400
-Ralerway 700
-*/
-
 html {
     box-sizing: border-box;
 }
@@ -94,6 +89,17 @@ span {
     align-items: center;
 }
 
+.hide-item {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
 /* -----НАВИГАЦИЯ----- */
 
 .header {
@@ -133,7 +139,19 @@ main {
     margin-right: 30px;
 }
 
-.header-list img {
+.header-mail-link-svg {
+    width: 16px;
+    height: 11px;
+    fill: var(--desc-color);
+}
+
+.header-tel-link-svg {
+    width: 10px;
+    height: 15px;
+    fill: var(--desc-color);
+}
+
+.header-list svg {
     margin-right: 10px;
 }
 
@@ -155,6 +173,13 @@ main {
     color: var(--accent-color);
 }
 
+.header-mail-link:hover .header-mail-link-svg,
+.header-tel-link:hover .header-tel-link-svg,
+.header-mail-link:focus .header-mail-link-svg,
+.header-tel-link:focus .header-tel-link-svg {
+    fill: var(--accent-color);
+}
+
 /* -----HERO----- */
 
 .hero {
@@ -167,6 +192,7 @@ main {
             rgba(47, 48, 58, 0.8)
         ),
         url('../images/Header-img.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -205,17 +231,6 @@ main {
 
 /* -----ОСОБЕННОСТИ----- */
 
-.hide-item {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-}
-
 .features-list {
     justify-content: space-between;
 }
@@ -225,6 +240,12 @@ main {
     margin-right: 30px;
     text-align: left;
 }
+
+.features-listitem-svg {
+    width: 70px;
+    height: 70px;
+}
+
 .features-list-item:last-child {
     margin-right: 0;
 }
@@ -234,6 +255,7 @@ main {
     border-radius: 4px;
     padding: 25px 100px;
     margin-bottom: 30px;
+    height: 120px;
 }
 
 .features-item-title {
@@ -285,6 +307,30 @@ main {
     width: 270px;
 }
 
+.team-social-links-item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+.team-social-links-item-link-svg,
+.social-links-item-link-svg {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+}
+
+.team-social-links-item:hover .team-social-links-item-link-svg,
+.team-social-links-item:focus .team-social-links-item-link-svg {
+    fill: var(--text-light-theme-color);
+}
+
+.team-social-links-item:hover,
+.team-social-links-item:focus {
+    background-color: var(--accent-color);
+}
+
 .team-card img {
     margin-bottom: 30px;
 }
@@ -323,9 +369,18 @@ main {
     height: 90px;
 }
 
+.clients-list-item-link-svg {
+    fill: #afb1b8;
+}
+
 .clients-list-item:hover,
 .clients-list-item:focus {
     border: 1px solid var(--accent-color);
+}
+
+.clients-list-item:hover .clients-list-item-link-svg,
+.clients-list-item:focus .clients-list-item-link-svg {
+    fill: var(--accent-color);
 }
 
 /*-----ПОДВАЛ-----*/
@@ -379,13 +434,18 @@ footer {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     margin-right: 10px;
 }
 
 .social-links-item:hover,
 .social-links-item:focus {
-    background: var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+.social-links-item:hover .social-links-item-link-svg,
+.social-links-item:focus .social-links-item-link-svg {
+    fill: var(--text-light-theme-color);
 }
 
 .filter-button {
