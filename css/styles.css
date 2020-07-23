@@ -307,6 +307,10 @@ main {
     width: 270px;
 }
 
+.team-card img {
+    margin-bottom: 30px;
+}
+
 .team-social-links-item {
     width: 44px;
     height: 44px;
