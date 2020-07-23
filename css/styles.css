@@ -295,11 +295,11 @@ main {
 
 /*-----НАША КОМАНДА-----*/
 
-.team div {
+.team-card-list {
     justify-content: space-between;
 }
 
-.team-card {
+.team-card-item {
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
@@ -307,7 +307,7 @@ main {
     width: 270px;
 }
 
-.team-card img {
+.team-card-item img {
     margin-bottom: 30px;
 }
 
@@ -384,8 +384,9 @@ main {
 }
 
 /*-----ПОДВАЛ-----*/
+
 footer {
-    background: #2f303a;
+    background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -453,7 +454,7 @@ footer {
     font-size: 16px;
     line-height: 1.6em;
     color: var(--text-dark-theme-color);
-    background: #f5f4fa;
+    background-color: #f5f4fa;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 3px 1px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
@@ -521,5 +522,5 @@ footer {
     font-size: 18px;
     line-height: 1.55em;
     color: var(--text-light-theme-color);
-    background: var(--accent-color);
+    background-color: var(--accent-color);
 }
