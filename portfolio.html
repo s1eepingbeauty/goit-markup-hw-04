@@ -63,7 +63,11 @@
                                 href="mailto:info@devstudio.com"
                                 target="_blank"
                             >
-                                <svg class="header-mail-link-svg">
+                                <svg
+                                    class="header-mail-link-svg"
+                                    width="16"
+                                    height="11"
+                                >
                                     <use href="./images/sprite.svg#mail"></use>
                                 </svg>
                                 info@devstudio.com</a
@@ -75,7 +79,11 @@
                                 href="tel:+380961111111"
                                 target="_blank"
                             >
-                                <svg class="header-tel-link-svg">
+                                <svg
+                                    class="header-tel-link-svg"
+                                    width="10"
+                                    height="15"
+                                >
                                     <use href="./images/sprite.svg#tel"></use>
                                 </svg>
                                 +38 096 111 11 11</a
@@ -122,149 +130,310 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="projects-list list container flex-wrap">
-                    <li class="project">
-                        <img
-                            src="./images/portfolio-img/project-img-1.jpg"
-                            width="370"
-                            height="294"
-                            alt=""
-                        />
-                        <div class="project-item">
-                            <p class="project-name">Технокряк</p>
-                            <p class="project-type">Веб-сайт</p>
-                            <p class="project-description hide-item" hidden>
-                                Технокряк это современная площадка
-                                распространения коронавируса. Компании
-                                используют эту платформу для цифрового шпионажа
-                                и атак на защищённые сервера конкурентов.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <img
-                            src="./images/portfolio-img/project-img-2.jpg"
-                            width="370"
-                            height="294"
-                            alt=""
-                        />
-                        <div class="project-item">
-                            <p class="project-name">
-                                Постер
-                                <span lang="en">New Orlean vs Golden Star</span>
-                            </p>
-                            <p class="project-type">Дизайн</p>
-                            <p class="project-description" hidden></p>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <img
-                            src="./images/portfolio-img/project-img-3.jpg"
-                            width="370"
-                            height="294"
-                            alt=""
-                        />
-                        <div class="project-item">
-                            <p class="project-name">
-                                Ресторан <span lang="en">Seafood</span>
-                            </p>
-                            <p class="project-type">Приложение</p>
-                            <p class="project-description" hidden></p>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <img
-                            src="./images/portfolio-img/project-img-4.jpg"
-                            width="370"
-                            height="294"
-                            alt=""
-                        />
-                        <div class="project-item">
-                            <p class="project-name">
-                                Проект <span lang="en">Prime</span>
-                            </p>
-                            <p class="project-type">Маркетинг</p>
-                            <p class="project-description" hidden></p>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <img
-                            src="./images/portfolio-img/project-img-5.jpg"
-                            width="370"
-                            height="294"
-                            alt=""
-                        />
-                        <div class="project-item">
-                            <p class="project-name">
-                                Проект <span lang="en">Boxes</span>
-                            </p>
-                            <p class="project-type">Приложение</p>
-                            <p class="project-description" hidden></p>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <img
-                            src="./images/portfolio-img/project-img-6.jpg"
-                            width="370"
-                            height="294"
-                            alt=""
-                        />
-                        <div class="project-item">
-                            <p class="project-name">
-                                <span lang="en"
-                                    >Inspiration has no Borders</span
-                                >
-                            </p>
-                            <p class="project-type">Веб-сайт</p>
-                            <p class="project-description" hidden></p>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <img
-                            src="./images/portfolio-img/project-img-7.jpg"
-                            width="370"
-                            height="294"
-                            alt=""
-                        />
-                        <div class="project-item">
-                            <p class="project-name">
-                                Издание <span lang="en">Lmited edition</span>
-                            </p>
-                            <p class="project-type">Дизайн</p>
-                            <p class="project-description" hidden></p>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <img
-                            src="./images/portfolio-img/project-img-8.jpg"
-                            width="370"
-                            height="294"
-                            alt=""
-                        />
-                        <div class="project-item">
-                            <p class="project-name">
-                                Проект <span lang="en">LAB</span>
-                            </p>
-                            <p class="project-type">Маркетинг</p>
-                            <p class="project-description" hidden></p>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <img
-                            src="./images/portfolio-img/project-img-9.jpg"
-                            width="370"
-                            height="294"
-                            alt=""
-                        />
-                        <div class="project-item">
-                            <p class="project-name">
-                                <span lang="en">Growing Business</span>
-                            </p>
-                            <p class="project-type">Приложение</p>
-                            <p class="project-description" hidden></p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="container">
+                    <ul class="projects-list list flex-wrap">
+                        <li class="project-list-item">
+                            <a
+                                class="project-list-item-link link"
+                                href=""
+                                aria-label="Ссылка на проект Технокряк"
+                            >
+                                <div>
+                                    <img
+                                        src="./images/portfolio-img/project-img-1.jpg"
+                                        width="370"
+                                        height="294"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="project-description hide-item"
+                                        hidden
+                                    >
+                                        Технокряк это современная площадка
+                                        распространения коронавируса. Компании
+                                        используют эту платформу для цифрового
+                                        шпионажа и атак на защищённые сервера
+                                        конкурентов.
+                                    </p>
+                                </div>
+                                <div class="project-title">
+                                    <p class="project-name">Технокряк</p>
+                                    <p class="project-type">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project-list-item">
+                            <a
+                                class="project-list-item-link link"
+                                href=""
+                                aria-label="Ссылка на проект Постер"
+                            >
+                                <div>
+                                    <img
+                                        src="./images/portfolio-img/project-img-2.jpg"
+                                        width="370"
+                                        height="294"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="project-description hide-item"
+                                        hidden
+                                    >
+                                        Технокряк это современная площадка
+                                        распространения коронавируса. Компании
+                                        используют эту платформу для цифрового
+                                        шпионажа и атак на защищённые сервера
+                                        конкурентов.
+                                    </p>
+                                </div>
+                                <div class="project-title">
+                                    <p class="project-name">
+                                        Постер
+                                        <span lang="en"
+                                            >New Orlean vs Golden Star</span
+                                        >
+                                    </p>
+                                    <p class="project-type">Дизайн</p>
+                                    <p class="project-description" hidden></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project-list-item">
+                            <a
+                                class="project-list-item-link link"
+                                href=""
+                                aria-label="Ссылка на проект Ресторан"
+                            >
+                                <div>
+                                    <img
+                                        src="./images/portfolio-img/project-img-3.jpg"
+                                        width="370"
+                                        height="294"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="project-description hide-item"
+                                        hidden
+                                    >
+                                        Технокряк это современная площадка
+                                        распространения коронавируса. Компании
+                                        используют эту платформу для цифрового
+                                        шпионажа и атак на защищённые сервера
+                                        конкурентов.
+                                    </p>
+                                </div>
+                                <div class="project-title">
+                                    <p class="project-name">
+                                        Ресторан <span lang="en">Seafood</span>
+                                    </p>
+                                    <p class="project-type">Приложение</p>
+                                    <p class="project-description" hidden></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project-list-item">
+                            <a
+                                class="project-list-item-link link"
+                                href=""
+                                aria-label="Ссылка на проект Prime"
+                            >
+                                <div>
+                                    <img
+                                        src="./images/portfolio-img/project-img-4.jpg"
+                                        width="370"
+                                        height="294"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="project-description hide-item"
+                                        hidden
+                                    >
+                                        Технокряк это современная площадка
+                                        распространения коронавируса. Компании
+                                        используют эту платформу для цифрового
+                                        шпионажа и атак на защищённые сервера
+                                        конкурентов.
+                                    </p>
+                                </div>
+                                <div class="project-title">
+                                    <p class="project-name">
+                                        Проект <span lang="en">Prime</span>
+                                    </p>
+                                    <p class="project-type">Маркетинг</p>
+                                    <p class="project-description" hidden></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project-list-item">
+                            <a
+                                class="project-list-item-link link"
+                                href=""
+                                aria-label="Ссылка на проект Boxes"
+                            >
+                                <div>
+                                    <img
+                                        src="./images/portfolio-img/project-img-5.jpg"
+                                        width="370"
+                                        height="294"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="project-description hide-item"
+                                        hidden
+                                    >
+                                        Технокряк это современная площадка
+                                        распространения коронавируса. Компании
+                                        используют эту платформу для цифрового
+                                        шпионажа и атак на защищённые сервера
+                                        конкурентов.
+                                    </p>
+                                </div>
+                                <div class="project-title">
+                                    <p class="project-name">
+                                        Проект <span lang="en">Boxes</span>
+                                    </p>
+                                    <p class="project-type">Приложение</p>
+                                    <p class="project-description" hidden></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project-list-item">
+                            <a
+                                class="project-list-item-link link"
+                                href=""
+                                aria-label="Ссылка на проект"
+                            >
+                                <div>
+                                    <img
+                                        src="./images/portfolio-img/project-img-6.jpg"
+                                        width="370"
+                                        height="294"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="project-description hide-item"
+                                        hidden
+                                    >
+                                        Технокряк это современная площадка
+                                        распространения коронавируса. Компании
+                                        используют эту платформу для цифрового
+                                        шпионажа и атак на защищённые сервера
+                                        конкурентов.
+                                    </p>
+                                </div>
+                                <div class="project-title">
+                                    <p class="project-name">
+                                        <span lang="en"
+                                            >Inspiration has no Borders</span
+                                        >
+                                    </p>
+                                    <p class="project-type">Веб-сайт</p>
+                                    <p class="project-description" hidden></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project-list-item">
+                            <a
+                                class="project-list-item-link link"
+                                href=""
+                                aria-label="Ссылка на проект Издание"
+                            >
+                                <div>
+                                    <img
+                                        src="./images/portfolio-img/project-img-7.jpg"
+                                        width="370"
+                                        height="294"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="project-description hide-item"
+                                        hidden
+                                    >
+                                        Технокряк это современная площадка
+                                        распространения коронавируса. Компании
+                                        используют эту платформу для цифрового
+                                        шпионажа и атак на защищённые сервера
+                                        конкурентов.
+                                    </p>
+                                </div>
+                                <div class="project-title">
+                                    <p class="project-name">
+                                        Издание
+                                        <span lang="en">Lmited edition</span>
+                                    </p>
+                                    <p class="project-type">Дизайн</p>
+                                    <p class="project-description" hidden></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project-list-item">
+                            <a
+                                class="project-list-item-link link"
+                                href=""
+                                aria-label="Ссылка на маркетинговый проект"
+                            >
+                                <div>
+                                    <img
+                                        src="./images/portfolio-img/project-img-8.jpg"
+                                        width="370"
+                                        height="294"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="project-description hide-item"
+                                        hidden
+                                    >
+                                        Технокряк это современная площадка
+                                        распространения коронавируса. Компании
+                                        используют эту платформу для цифрового
+                                        шпионажа и атак на защищённые сервера
+                                        конкурентов.
+                                    </p>
+                                </div>
+                                <div class="project-title">
+                                    <p class="project-name">
+                                        Проект <span lang="en">LAB</span>
+                                    </p>
+                                    <p class="project-type">Маркетинг</p>
+                                    <p class="project-description" hidden></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project-list-item">
+                            <a
+                                class="project-list-item-link link"
+                                href=""
+                                aria-label="Ссылка на проект Приложение"
+                            >
+                                <div>
+                                    <img
+                                        src="./images/portfolio-img/project-img-9.jpg"
+                                        width="370"
+                                        height="294"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="project-description hide-item"
+                                        hidden
+                                    >
+                                        Технокряк это современная площадка
+                                        распространения коронавируса. Компании
+                                        используют эту платформу для цифрового
+                                        шпионажа и атак на защищённые сервера
+                                        конкурентов.
+                                    </p>
+                                </div>
+                                <div class="project-title">
+                                    <p class="project-name">
+                                        <span lang="en">Growing Business</span>
+                                    </p>
+                                    <p class="project-type">Приложение</p>
+                                    <p class="project-description" hidden></p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
 
@@ -309,9 +478,9 @@
                 <div class="social-links">
                     <p class="social-links-title uppercase">Присоединяйтесь</p>
                     <ul class="social-links list flex-wrap">
-                        <li class="social-links-item center">
+                        <li class="social-links-item">
                             <a
-                                class="social-links-item-link link"
+                                class="social-links-item-link link center"
                                 href=""
                                 aria-label="Ссылка на Инстаграм"
                                 ><svg class="social-links-item-link-svg">
@@ -320,9 +489,9 @@
                                     ></use></svg
                             ></a>
                         </li>
-                        <li class="social-links-item center">
+                        <li class="social-links-item">
                             <a
-                                class="social-links-item-link link"
+                                class="social-links-item-link link center"
                                 href=""
                                 aria-label="Ссылка на Твитер"
                                 ><svg class="social-links-item-link-svg">
@@ -331,9 +500,9 @@
                                     ></use></svg
                             ></a>
                         </li>
-                        <li class="social-links-item center">
+                        <li class="social-links-item">
                             <a
-                                class="social-links-item-link link"
+                                class="social-links-item-link link center"
                                 href=""
                                 aria-label="Ссылка на Фейсбук"
                                 ><svg class="social-links-item-link-svg">
@@ -342,9 +511,9 @@
                                     ></use></svg
                             ></a>
                         </li>
-                        <li class="social-links-item center">
+                        <li class="social-links-item">
                             <a
-                                class="social-links-item-link link"
+                                class="social-links-item-link link center"
                                 href=""
                                 aria-label="Ссылка на Линкедин"
                                 ><svg class="social-links-item-link-svg">
